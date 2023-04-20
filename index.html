@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div>
+        <div> 
+            <img src="img/Logo-1.png" alt="logo-alura" class="logo">
+        </div>
+        <div>
+            <textarea name="descipcion" placeholder="Ingresa tu texto aqui" id="inputtexto" ></textarea>
+        </div>
+
+        <div>
+            <div class="frame1">
+                <img src="img/bi_exclamation-circle-fill-1.png" alt="alerta">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="frame3">
+                <input type="submit" value="Encriptar" class="encriptar" onclick="encriptar()">
+                <input type="submit" value="Desencriptar" class="desencriptar" onclick="desencriptar()">
+
+            </div>
+        </div>
+        
+
+        <div>
+            <ul class="frame2">
+                <li>
+                    <textarea name="cifrado" id="text3"></textarea>
+                </li>
+                <li class="muñeco">
+                    <img src="img/Muñeco.png" alt="Muñecoalura" id="imgder">
+                </li>
+                <li class="nocapturado">
+                    <p id="text1">Ningún mensaje fue encontrado</p>
+                </li>
+                <li class="ingreso">
+                    <p id="text2">Ingres el texto que desees encriptar o desencriptar</p>
+                </li>
+                <li class="resultado">
+                    <input type="submit" value="Copiar" class="copiar" id="copiar" onclick="copiar()">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="scrip.js"></script>
+</html>
